@@ -473,9 +473,10 @@ ul {
 .button-container {
   display: flex;
   gap: 20px; /* Space between buttons */
-  position: absolute;
+  position: fixed;
   top: 40px;
-  left: 20px; /* Adjust to position the container */
+  left: 20px;
+  z-index: 1000;
 }
 
 .Documents-btn, .Documents {
@@ -558,14 +559,13 @@ ul {
   justify-content: flex-start;
   border-width: 0;
   color: black;
-  font-family:"Alfa Slab One", serif ;
+  font-family: "Alfa Slab One", serif;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 4px;
   z-index: 9999;
-  position: fixed; 
-  top: 40px; 
+  top: 40px;
   left: 370px;
   text-decoration: none;
 }
@@ -637,9 +637,9 @@ ul {
 
 
 .ui-btn {
-  --btn-default-bg:white;
+  --btn-default-bg: white;
   --btn-padding: 5px 15px;
-  --btn-hover-bg:white;
+  --btn-hover-bg: white;
   --btn-transition: .3s;
   --btn-letter-spacing: .1rem;
   --btn-animation-duration: 1.2s;
@@ -649,14 +649,8 @@ ul {
   --default-btn-color: black;
   --font-size: 16px;
   --font-weight: 600;
-  --font-family:"Alfa Slab One", serif;
+  --font-family: "Alfa Slab One", serif;
 
- 
-}
-
-
-
-.ui-btn {
   box-sizing: border-box;
   padding: 0 20px;
   display: flex;
@@ -671,10 +665,8 @@ ul {
   overflow: hidden;
   box-shadow: var(--btn-shadow);
   position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 40px;
-  margin-left: 510px;
+  top: 40px;
+  left: 510px;
   z-index: 1000;
   height: 43px;
   line-height: 43px;
