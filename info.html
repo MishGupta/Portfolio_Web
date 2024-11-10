@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    background-color: black;
+}
+.card {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 60rem; /* Increased width */
+    font-family: monospace;
+    box-sizing: border-box;
+  }
+  
+  /* Header section */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Traffic light indicators */
+  .traffic-lights {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .light {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  /* Title styling */
+  .terminal-title {
+    font-size: 0.875rem;
+    color: gray;
+  }
+  
+  /* Content section */
+  .card-content {
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 15rem;
+  }
+  
+  /* Section title */
+  .section-title {
+    color: #32cd32; /* Green color */
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* About text styling */
+  .about-text {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .about-text span {
+    color: #1e90ff; /* Blue for emphasis */
+    font-weight: bold;
+  }
+  
+</style>
+<body>
+    <aside class="card">
+        <!-- Card Header with Traffic Lights -->
+        <div class="card-header">
+            <div class="traffic-lights">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+            <p class="terminal-title">bash</p>
+        </div>
+        
+        <!-- Card Content Section -->
+        <div class="card-content">
+            <p class="section-title">About Me</p>
+            <p class="about-text">
+                I am currently in my pre-final year at Symbiosis Institute of Technology (SIT) Pune, pursuing a Bachelor's degree in Computer Science. During my time at SIT, I have gained a strong foundation in various aspects of computer science, including programming, algorithms, and software development. I am passionate about exploring emerging technologies such as AI, machine learning, and web development. My academic journey has been shaped by hands-on projects, collaborative learning, and a commitment to building solutions that address real-world challenges. As I approach the final year, I am excited to apply my skills to more advanced projects and further deepen my knowledge in the field. My hobbies are painting,singing and cooking. 
+            </p>
+        </div>
+    </aside>
+</body>
+</html>

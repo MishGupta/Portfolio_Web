@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<style>
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusts the space between the cards */
+    flex-wrap: wrap; /* Wraps the cards if screen is too narrow */
+    gap: 1em; /* Adds gap between cards */
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color:azure
+}
+
+.card-img {
+    background-color: #ffcaa6;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    margin-bottom: 28px;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.text-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    border-top: 60px;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+    font-family: "Alfa Slab One", serif;
+}
+
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover Effects*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="images/mishka_certificate_250x186.jpg" alt="Matlab Certificate">
+            </div>
+            <div class="card-info">
+                <p class="text-title">Matlab Certificate of Make and Manipulate Matrices</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="images/Flipkart_certifcate_250x186.jpg" alt="Flipkart Certificate">
+            </div>
+            <div class="card-info">
+                <p class="text-title">Flipkart Participation Certificate</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="images/IEEE_250x186.jpg" alt="IEEE ICUBEA Conference Certificate">
+            </div>
+            <div class="card-info">
+                <p class="text-title">IEEE ICUBEA Conference Research Paper</p>
+            </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+              <img src="images/Matlab-2.png" alt="Matlab Cert">
+          </div>
+          <div class="card-info">
+              <p class="text-title">MATLAB Desktop Tools and Troubleshooting Scripts</p>
+          </div>
+      </div>
+        
+      <div class="card">
+        <div class="card-img">
+            <img src="images/Matlab-3.png" alt="Matlab Cert">
+        </div>
+        <div class="card-info">
+            <p class="text-title"> Explore Data with MATLAB Plots</p>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">
+          <img src="images/Matlab-4.png" alt="Matlab Cert">
+      </div>
+      <div class="card-info">
+          <p class="text-title">  Calculations with Vectors and Matrices</p>
+      </div>
+  </div>
+    </div>
+</body>
+</html>
